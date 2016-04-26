@@ -1,0 +1,107 @@
+*{
+	/* border: 1px solid red; */
+}
+body{
+}
+/* 1.居中容器 */
+#container{
+	/* 宽度、高度、背景色 */
+	width: 600px;
+	height: 300px;
+	background-color: #30B0C7;
+	/* 水平+垂直居中 */
+	position: absolute; /*相对于window*/
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);/*相对于[移动元素]的移动距离*/
+	-moz-transform: translate(-50%,-50%);
+	transform:translate(-50%, -50%);
+	/* 边框 */
+	border-radius: 8px;
+	/* 字符居中 */
+	text-align: center;
+	/* padding内容 */
+	padding: 10px;
+}
+/* 2.1设置登录页面的标题 */
+#title{
+	/* 字体大小 */
+	font-size: 32px;
+	font-weight: bold;
+}
+/* 2.2传递到后台的信息 */
+#info{
+}
+#info>div{
+	/* background-color: white; */
+	color: #ccc;
+	position: relative;
+	clear: both;
+	/* 盒阴影 */
+	/* box-shadow: 1px 1px 1px 1px #blue inset;  */
+	margin-bottom: 10px;
+}
+#info>div>b{
+	position: absolute;
+	left: 8px;
+	top: 5px;
+	line-height: 35px;
+	font-size: 22px;
+}
+#info>div>input{
+	line-height: 35px;
+	height: 35px;
+	/* part1+part2=parent's width */
+	width: 420px; /*part1*/
+	padding-left: 30px;/*part2*/
+}
+input{
+	/* border: none; */
+	border-radius: 6px;
+	font-size: 16px;
+}
+/*active:鼠标在元素上按下还没有松开*/
+/* input:active{ 
+	background-color: #ff0;
+} */
+/*focus:获得光标焦点，主要用于文本输入*/
+input:focus{ 
+	box-shadow: 1px 1px 1px 1px #ccc inset;
+}
+/* Google浏览器单独处理其背景色 */
+input:-webkit-autofill{
+	background-color: white;
+}
+/* 2.3登录或记住密码等操作 */
+#action{
+	margin-top: 5px;
+}
+/*3.有效数据信息和操作*/
+.validCls{ 
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	/* 设置行高 */
+	/* line-height: 40px;  */
+	/* height: 40px; */ /*gkq:注意必须设置高度，否则绝对定位时隐藏*/
+}
+/* 4.登录按钮 */
+#loginBtn{
+	width: 450px;
+	height: 40px;
+	/* 鼠标形状 */
+	cursor: pointer;
+	/* 背景色+边框色 */
+	background-color: #428bca;
+	border-color: #428bca;
+	font-size: 18px;
+	padding: 4px;
+	color: white;
+	/*  */
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+#loginBtn:hover{ /*hover:悬停到元素上时*/
+	background-color: #353ABD;
+}

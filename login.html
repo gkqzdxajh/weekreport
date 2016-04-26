@@ -4,10 +4,26 @@
 	<title>登录页面</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
-
+	<div id="container">
+		<div id="title">XXX平台</div>
+		<div id="info">
+			<div id="unameInfo" class="validCls">
+				<b class="fa fa-user"></b>
+				<input type="text" id="username" placeholder="用户名" />
+			</div>
+			<div id="pwordInfo" class="validCls">
+				<b class="fa fa-lock"></b>
+				<input id="password" type="password" placeholder="密码" />
+			</div>
+		</div>
+		<div id="action" class="validCls">
+			<button type="button" id="loginBtn">登录</button>
+		</div>
+	</div>
 </body>
 </html>
 
